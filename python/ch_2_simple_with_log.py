@@ -9,7 +9,7 @@ def main():
     logging.debug("main start...")
 
     pid = os.fork()
-    logging.debug("this point for child process is 'resume'-ing running, while for parent procss is 'continue'-ing running")
+    logging.debug("this point for child process is 'resume'-ing running" if pid == 0 else "this point for parent procss is 'continue'-ing running")  # if 和 else 代码在父、子进程都有可见性
     if pid == 0:
         # Codes running in the child process eventually.
         logging.debug("%d (child) just was created by %d." % (os.getpid(), os.getppid()))
