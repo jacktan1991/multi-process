@@ -4,6 +4,7 @@
 import os
 
 def main():
+    # all codes before fork will be calles only once
     print("main start...")
 
     pid = os.fork()
