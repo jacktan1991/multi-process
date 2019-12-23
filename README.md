@@ -12,3 +12,6 @@ python 中 fork 子进程基本写法，代码运行的基本流程调试信息
 
 ## PHP版
 ### Charpt 1
+
+参考：
+- https://stackoverflow.com/questions/19068434/php-fork-process-getting-child-output-in-parent/20424206#answer-19068483
